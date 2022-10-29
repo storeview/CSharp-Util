@@ -1,4 +1,6 @@
 ﻿using CSharp_Util.Test;
+using CSharp_Util.Test.WCF.Basic1;
+using CSharp_Util.Test.WCF.Basic2;
 using CSharp_Util.Util;
 using System;
 using System.Collections.Generic;
@@ -13,17 +15,7 @@ namespace CSharp_Util
     {
         static void Main(string[] args)
         {
-
-            var dir = "D:\\Windows数据移动到此文件夹\\Desktop\\MQTTnet-4.1.0.247";
-            var ret = FileUtil.FindExecutableProgramWithSameNameAsDirectory(dir);
-
-            var curDir = Directory.GetCurrentDirectory();
-            Console.WriteLine(ret);
-            Console.WriteLine(dir);
-            Console.WriteLine(ret.Replace(dir, ""));
-            Console.WriteLine(curDir + ret.Replace(dir, ""));
-
-            Console.ReadKey();
+            Run2.Run();
         }
     }
 }
