@@ -1,4 +1,5 @@
 ﻿using CSharp_Util.Test;
+using CSharp_Util.Test.MqttTestServer;
 using CSharp_Util.Test.WCF.Basic1;
 using CSharp_Util.Test.WCF.Basic2;
 using CSharp_Util.Util;
@@ -15,7 +16,7 @@ namespace CSharp_Util
     {
         static void Main(string[] args)
         {
-            Run2.Run();
+            MqttTest1.Run();
         }
     }
 }
